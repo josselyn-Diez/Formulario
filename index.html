@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Formulario de Registro</h1>
+   
+    <form>
+        <div class="mb-3">
+            <label for="nombres" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="nombres" name="nombres" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="cedula" class="form-label">Número de Cédula</label>
+            <input type="text" class="form-control" id="cedula" name="cedula" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+        </div>
+        <div class="mb-3">
+            <label for="Dirección" class="form-label">Dirección</label>
+            <textarea class="form-control" id="Dirección" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="estado_civil" class="form-label">Estado Civil</label>
+            <select class="form-select" id="estado_civil" name="estado_civil" aria-label="Selección de estado civil" required>
+                <option value="" disabled selected>Seleccione su estado civil</option>
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viudo">Viudo</option>
+                <option value="Situacion Dificil">Situación Dificil</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="Etnia" class="form-label">Etnia</label>
+            <select class="form-select" id="Etnia" name="Etnia" aria-label="Etnia" required>
+                <option value="" disabled selected>Seleccione Etnia</option>
+                <option value="Blanco">Blanco</option>
+                <option value="Afrodescendiente">Afrodescendiente</option>
+                <option value="Meztizo">Meztizo</option>
+                <option value="Indigena">Indigena</option>
+                <option value="Con el que se identifique">Con el que se identifique</option>
+            </select>
+        </div>
+        <label class="form-label">Género</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="generoMasculino" value="masculino" required>
+            <label class="form-check-label" for="generoMasculino">
+                Masculino
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="generoFemenino" value="femenino">
+            <label class="form-check-label" for="generoFemenino">
+                Femenino
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="generoOtro" value="otro">
+            <label class="form-check-label" for="generoOtro">
+                Otro
+            </label>
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Preferencias</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="fuma" name="fuma" value="si">
+            <label class="form-check-label" for="fuma">
+                Fuma
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="tomaAlcohol" name="toma_alcohol" value="si">
+            <label class="form-check-label" for="tomaAlcohol">
+                Toma Alcohol
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="consumeDrogas" name="consume_drogas" value="si">
+            <label class="form-check-label" for="consumeDrogas">
+                Consume Drogas
+            </label>
+    </div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" id="Ninguna de las anteriores" name="Ninguna de las anteriores" value="si">
+    <label class="form-check-label" for="Ninguna de las anteriores">
+        Ninguna de las anteriores
+    </label>
+</div>
+    <br>
+    <div class="col-12">
+        <button class="btn btn-primary" type="Enviar">Enviar</button>
+      </div>
+    </form>    
+    
+    
+</div>
+
+</body>
+</html>
